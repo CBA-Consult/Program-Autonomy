@@ -22,10 +22,37 @@
 
 This document outlines the strategic vision and plan for a company developing self-charging electric vehicles (SCEVs).  Our mission is to revolutionize personal transportation by providing vehicles that arrive home fully charged, eliminating range anxiety and dependence on external charging infrastructure.  This will be achieved through a combination of cutting-edge solar energy harvesting technology, advanced battery management systems, and a commitment to sustainability and user-centric design.  The plan encompasses technology development, user experience optimization, sustainable manufacturing, targeted market penetration, robust financial planning, active customer engagement, scalable production, and continuous adaptation to market dynamics.  Success will be measured through key performance indicators (KPIs) detailed in subsequent sections.
 
+### Target customer segments & prioritized use-cases
+
+Primary segments and jobs-to-be-done:
+
+- Fleet operators: Reduce total energy spend, increase vehicle uptime, and simplify depot charging for high-utilization vehicles (delivery, logistics, municipal fleets). Best early-fit for pilots due to quick payback potential.
+- OEM retrofit & Tier-1 partners: Offer retrofit or factory-integrated modules to enable product differentiation and new revenue streams (options, subscriptions).
+- Shared mobility & urban micro-mobility operators: Cut downtime and infrastructure complexity for dense-use fleets with predictable routes.
+- Homeowners & premium consumers: Deliver convenience (arrive-home-charged), resilience (V2H backup), and environmental credentials; longer payback but high marketing value.
+
+
 
 ## Project Goals
 
 The overarching goal is to establish a leading position in the self-charging electric vehicle market by 2030. This will be achieved through the following key objectives:
+## Competitive differentiation (project-level)
+
+- Unique technical features: multi-input energy harvesting (PV + kinetic + induction), high-efficiency multi-source BMS, and onboard AI energy orchestration that together reduce grid dependence and improve uptime.
+- IP and defensibility: prioritized provisional filings on control algorithms and mechanical integration; modular platform design (Bedrock) reduces copyability and accelerates time-to-market.
+- Integration and partner access: retrofit-ready kits and standard ICDs simplify OEM/Tier-1 integration; existing LOIs with fleet partners provide pilot access.
+
+## How it works (quick schematic)
+
+Sunlight -> Solari (PV panels)  
+Motion -> Kinetix (regenerative + suspension harvesters)  
+Both feed -> Guardian (multi-input BMS) -> Synapse (AI IPMS) -> Vehicle Drive / Nexus (V2H/V2G)
+
+Integration points (high level):
+
+1. Vehicle: physical mounting, electrical integration with Bedrock chassis and BMS; minimal structural changes via retrofit kit.
+2. Telematics & Cloud: telemetry stream (standard schema) for IPMS optimization, OTA updates, and fleet monitoring.
+3. Charging network & Grid: Nexus manages bidirectional flows and utility interconnection for V2H/V2G pilots (permits and ICDs required).
 
 **Phase 1:  Proof of Concept & Prototype Development (Years 1-3)**
 

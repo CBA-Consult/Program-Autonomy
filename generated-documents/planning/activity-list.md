@@ -42,7 +42,8 @@ This Activity List is fully aligned with the Work Breakdown Structure (WBS) for 
 * Research Regenerative Braking Technologies (16h)
 * Research AI for Energy Optimization (16h)
 * Compile Technology Research Report (8h)
-
+* Coordinate cross-functional tech reviews with Bedrock integration team (4h)
+* Produce subsystem TRL assessment and go/no-go recommendations (8h)
 #### WBS-1.2.2 Develop Technical Specifications
 * Draft Technical Specifications for SCEV Self-Charging System (16h)
 * Review and Refine Specifications (8h)
@@ -162,3 +163,32 @@ This Activity List is fully aligned with the Work Breakdown Structure (WBS) for 
 * **Documentation:** Compilation and finalization of the business plan.
 
 Effort estimates are preliminary and should be reviewed as the project progresses. This detailed activity list provides a comprehensive, WBS-aligned framework for successful execution of the SCEV Business Strategic Plan.
+
+## Milestone Summary Table
+
+| Milestone | Phase | Target Date | Related WBS Code |
+|:---|:---|:---|:---|
+| Vision Statement Approved | Phase 1 | Q4 2025 | 1.1.1 |
+| Technology Research Report Complete | Phase 1 | Q1 2026 | 1.2.1 |
+| Provisional Patents Filed | Phase 1 | Q2 2026 | 1.2.4 |
+| Market Research Report Complete | Phase 2 | Q1 2026 | 1.3.1 |
+| Regulatory Pilot Approvals | Phase 2/3 | Q4 2026 | 1.7.1 |
+| Business Plan Approved | Phase 3 | Q1 2027 | 1.9.1 |
+
+---
+
+## Milestone verification criteria (sample)+
+
+Each milestone should include verifiable acceptance criteria, instrumentation, and an owner responsible for sign-off:+
+
+-- Technology Research Report Complete (WBS 1.2.1): deliverable = signed research report + TRL assessment; verification = laboratory test reports and TRL scorecard; owner = Project Lead (Solari/Kinetix). 
+-- Regulatory Pilot Approvals (WBS 1.7.1): deliverable = signed pilot permit or LOI with utility; verification = copy of permit / LOI and test plan; owner = Regulatory & Standards Liaison.
+-- Provisional Patents Filed (WBS 1.2.4): deliverable = filing confirmation numbers and abstracts; verification = patent office receipts; owner = Legal / IP Counsel.
+Note: map each milestone to a measurable artifact (report, test log, filing receipt, signed LOI) to enable program-level gate decisions.
+
+### Pilot measurement & KPI instrumentation (sample)
+
+- Key metrics to collect: kWh recovered per day, kWh/mile, charge-event count per week, battery SoH delta over pilot, V2H export kWh (home pilots), and pilot NPS.
+- Sampling & aggregation: raw telemetry at 1Hz for power/energy channels during validation windows; daily aggregated KPIs for operational review; weekly KPI digest for PMO.
+- Instrumentation: calibrated energy meters at depot/house interface, CAN/BMS telemetry feeds, GPS and duty-cycle tagging, cloud ingestion with secure APIs, and dashboarding for pilot stakeholders.
+- Verification owner: Pilot Lead / Project Lead to provide final signed pilot report with raw logs, summary KPIs, and anomaly analysis for the PMO acceptance gate.

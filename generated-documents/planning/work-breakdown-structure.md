@@ -54,6 +54,7 @@
 *   Outline a phased approach for technology development, including R&D milestones.
 *   Assess and mitigate technical risks and challenges.
 *   Secure necessary intellectual property (IP) protection.
+*   Secure necessary intellectual property (IP) protection. (See Milestone: Provisional Patents Filed, WBS 1.2.4, Q2 2026. Cross-reference: Legal/IP Counsel, WBS Dictionary.)
 
 **1.3 Market Analysis and Strategy**
 
@@ -94,6 +95,7 @@
 *   Research and understand relevant legal and regulatory requirements for SCEVs.
 *   Develop a compliance plan to ensure adherence to all applicable laws and regulations.
 *   Secure necessary permits and licenses.
+*   Secure necessary permits and licenses. (See Milestone: Regulatory Pilot Approvals, WBS 1.7.1, Q4 2026. Cross-reference: Regulatory Liaison, WBS Dictionary.)
 
 
 **1.8 Plan for Continuous Improvement**
@@ -140,16 +142,22 @@ A full Work Package Summary Matrix will be included in the WBS Dictionary, detai
 
 The WBS will be validated against the checklist below before final approval.
 
-- [ ] 100% scope coverage verified
-- [ ] No overlapping work packages
-- [ ] All work packages are outcome-oriented
-- [ ] Work package size is appropriate (mostly 8-80 hours; exceptions documented)
-- [ ] Clear ownership assigned to each work package (in WBS Dictionary)
-- [ ] Dependencies identified and documented (in WBS Dictionary)
-- [ ] Effort estimates provided for all work packages (in WBS Dictionary)
-- [ ] Integration with project schedule confirmed (in WBS Dictionary)
 
 
+## Milestone Summary Table
+
+| Milestone | Phase | Target Date | Related WBS Code |
+|:---|:---|:---|:---|
+| Vision Statement Approved | Phase 1 | Q4 2025 | 1.1.1 |
+| Technology Research Report Complete | Phase 1 | Q1 2026 | 1.2.1 |
+| Provisional Patents Filed | Phase 1 | Q2 2026 | 1.2.4 |
+| Market Research Report Complete | Phase 2 | Q1 2026 | 1.3.1 |
+| Regulatory Pilot Approvals | Phase 2/3 | Q4 2026 | 1.7.1 |
+| Business Plan Approved | Phase 3 | Q1 2027 | 1.9.1 |
+
+---
+
+**WBS Dictionary Reference:** See [WBS Dictionary](WBS%20Dictionary.md) for detailed work packages, tasks, timelines, resource allocation, and acceptance criteria.
 ## WBS Maintenance Guidelines
 
 - **Update Frequency:** Weekly during planning, monthly during execution.

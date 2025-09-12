@@ -1,3 +1,33 @@
+## SCEV Program Structure: Updated Component Projects
+
+### Phase 1: Program Initiation and Planning (Updated)
+
+The updated mission of this program is to "Develop and integrate all energy harvesting, storage, and management technologies, creating a seamless and intelligent energy experience for the customer."
+
+**1. Updated Identification of Component Projects**
+The component projects are now redefined to align with the "Autonomy Program" and its specific technology focuses. Each of these will be managed as a distinct project within the overarching program.
+
+* **Project: Solari** (photovoltaic integration): Focuses on the research, design, and integration of high-efficiency photovoltaic (solar) panels into the vehicle's body to harvest solar energy.
+* **Project: Kinetix** (KERS optimization): Aims to optimize the Kinetic Energy Recovery System to maximize the conversion of kinetic energy from braking and deceleration into usable electrical energy for the battery.
+* **Project: Maglev** (next-gen maglev induction): This project will develop and test next-generation maglev induction technology for highly efficient, on-the-go charging from compatible road infrastructure.
+* **Project: Guardian** (advanced BMS): Concentrates on creating an advanced Battery Management System that can intelligently manage power input from multiple sources (solar, kinetic, induction, etc.) and optimize battery health and performance.
+* **Project: Synapse** (AI power management): This project will develop the core AI system responsible for intelligently managing all energy flows within the vehicle, ensuring seamless and efficient power distribution to the motor, accessories, and charging systems.
+* **Project: Nexus** (V2H/V2G functionality): Aims to enable Vehicle-to-Home (V2H) and Vehicle-to-Grid (V2G) capabilities, allowing the vehicle to serve as a mobile power source and a component of the smart grid.
+* **Project: Flux** (wireless charging): Focuses on developing a high-efficiency wireless charging system for stationary use, serving as a primary or supplementary charging method.
+
+**2. Program Objectives and Benefits**
+The core program objectives remain: technological innovation, operational efficiency, market share growth, and brand enhancement. The updated project list provides a more detailed roadmap for achieving these benefits. For example, the **Synapse** and **Guardian** projects will directly contribute to operational efficiency by optimizing energy management, while **Solari**, **Kinetix**, **Maglev**, and **Flux** drive technological innovation.
+
+**3. Program Scope and Governance**
+The program scope is now the successful integration of all seven projects into a single, cohesive SCEV product. The governance framework will be critical for managing the interdependencies between these projects, especially for integrating components like the **Synapse** and **Guardian** systems with the various energy harvesting technologies.
+
+### Project Lifecycle Management Protocol: Initiation Phase (Updated)
+
+Each of the seven projects will now proceed to the Project Initiation phase, where a formal Project Charter will be developed. Each charter will be a contract between the Project Manager and the Executive Sponsor and will include:
+* **Project Vision and Objectives:** Aligned with the program's mission to "develop and integrate all energy harvesting, storage, and management technologies..."
+* **Scope Definition:** A detailed scope for each specific project (e.g., the scope of **Project Solari** is the development and integration of photovoltaic panels, while the scope of **Project Guardian** is the creation of the BMS).
+* **Roles and Responsibilities:** Identification of key stakeholders and team members for each specific technology project.
+* **Risk Assessment:** A targeted risk assessment for each project, considering the technical and integration challenges unique to that technology. The "Exposure Draft" document reinforces the importance of this step.
 ## Program Autonomy - SCEV Program: Strategic Vision, Mission, and Purpose
 
 ### Introduction

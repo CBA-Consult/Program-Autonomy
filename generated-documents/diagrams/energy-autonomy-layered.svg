@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2b6cb0" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 Arial, Helvetica, sans-serif; fill:#0b2545 }
+      .layer-label { font: 700 16px/1 Arial, Helvetica, sans-serif; fill:#ffffff }
+      .box { rx:8; ry:8; stroke:#0b2545; stroke-width:1.5 }
+      .source { fill:#f6f8fb }
+      .system { fill:#e8f0fb }
+      .outcome { fill:#dff3e6 }
+      .small { font:14px Arial, sans-serif; fill:#0b2545 }
+      .muted { font:12px Arial, sans-serif; fill:#375a7f }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="40" y="40" class="title">SCEV — Energy Autonomy: Layered Technology Map</text>
+  <text x="40" y="64" class="muted">Energy Sources → Management Systems → Outcomes (board-ready)</text>
+
+  <!-- Energy Sources layer background -->
+  <rect x="30" y="90" width="1140" height="170" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+  <text x="50" y="120" class="layer-label" fill="#0b2545">Energy Sources</text>
+
+  <!-- Source boxes -->
+  <g transform="translate(50,140)">
+    <rect class="box source" x="0" y="0" width="220" height="90" />
+    <text x="14" y="28" class="small">Solari — On-Vehicle Photovoltaics</text>
+    <text x="14" y="48" class="muted">(roof, hood, body; ~3–7 kWh/day)</text>
+    <text x="14" y="68" class="muted">Project: Solari</text>
+  </g>
+
+  <g transform="translate(320,140)">
+    <rect class="box source" x="0" y="0" width="220" height="90" />
+    <text x="14" y="28" class="small">Kinetix — Kinetic Recovery</text>
+    <text x="14" y="48" class="muted">(regen braking, suspension harvest; 1–2 kWh/day)</text>
+    <text x="14" y="68" class="muted">Project: Kinetix</text>
+  </g>
+
+  <g transform="translate(590,140)">
+    <rect class="box source" x="0" y="0" width="220" height="90" />
+  <text x="14" y="28" class="small">Lightweighting &amp; Efficiency</text>
+    <text x="14" y="48" class="muted">(materials, aero, low-RR tyres; -10–20% demand)</text>
+    <text x="14" y="68" class="muted">Cross-program</text>
+  </g>
+
+  <g transform="translate(860,140)">
+    <rect class="box source" x="0" y="0" width="220" height="90" />
+    <text x="14" y="28" class="small">Emerging Enablers</text>
+    <text x="14" y="48" class="muted">(dynamic wireless, thermoelectrics, SSB)</text>
+    <text x="14" y="68" class="muted">Projects: Maglev, Flux (future phases)</text>
+  </g>
+
+  <!-- Management Systems layer background -->
+  <rect x="30" y="280" width="1140" height="180" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+  <text x="50" y="310" class="layer-label" fill="#0b2545">Management Systems</text>
+
+  <!-- Management boxes -->
+  <g transform="translate(160,330)">
+    <rect class="box system" x="0" y="0" width="360" height="110" />
+    <text x="18" y="30" class="small">Guardian — Advanced Battery Management</text>
+  <text x="18" y="54" class="muted">(multi-input charge handling, thermal &amp; cycle optimization)</text>
+    <text x="18" y="78" class="muted">Efficiency gains ~2–5%</text>
+  </g>
+
+  <g transform="translate(560,330)">
+    <rect class="box system" x="0" y="0" width="360" height="110" />
+    <text x="18" y="30" class="small">Synapse — AI Power Management</text>
+    <text x="18" y="54" class="muted">(predictive, driver-aware, solar / grid-aware optimization)</text>
+    <text x="18" y="78" class="muted">Range gain 5–15%</text>
+  </g>
+
+  <g transform="translate(370,460)">
+    <rect class="box system" x="0" y="0" width="460" height="60" />
+    <text x="18" y="36" class="small">Nexus — Bidirectional Energy (V2H / V2G)</text>
+  <text x="18" y="52" class="muted">(vehicle as energy hub, backup &amp; grid services)</text>
+  </g>
+
+  <!-- Outcomes layer background -->
+  <rect x="30" y="490" width="1140" height="140" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+  <text x="50" y="520" class="layer-label" fill="#0b2545">Outcomes</text>
+
+  <!-- Outcome boxes -->
+  <g transform="translate(70,540)">
+    <rect class="box outcome" x="0" y="0" width="300" height="80" />
+    <text x="16" y="28" class="small">Arrive Home Charged (Higher SOC)</text>
+    <text x="16" y="50" class="muted">Daily passive+active gains offset usage</text>
+  </g>
+
+  <g transform="translate(430,540)">
+    <rect class="box outcome" x="0" y="0" width="300" height="80" />
+    <text x="16" y="28" class="small">Reduced Grid Reliance</text>
+    <text x="16" y="50" class="muted">Lower peak draw; grid-friendly charging</text>
+  </g>
+
+  <g transform="translate(790,540)">
+    <rect class="box outcome" x="0" y="0" width="330" height="80" />
+  <text x="16" y="28" class="small">Vehicle-as-Hub &amp; Resilience</text>
+    <text x="16" y="50" class="muted">Backup power, value streams (V2G/V2H)</text>
+  </g>
+
+  <!-- Arrows: Sources -> Management -->
+  <line x1="210" y1="230" x2="340" y2="330" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="480" y1="230" x2="600" y2="330" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="740" y1="230" x2="770" y2="330" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="980" y1="230" x2="840" y2="330" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Arrows: Management -> Outcomes -->
+  <line x1="400" y1="450" x2="230" y2="540" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="650" y1="450" x2="560" y2="540" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)" />
+  <line x1="840" y1="450" x2="910" y2="540" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)" />
+
+  <!-- Legend / Notes -->
+  <text x="50" y="660" class="muted">Note: values shown are indicative. Combine passive generation (Solari), recovery (Kinetix), system efficiencies (Guardian, Synapse), and bidirectional flows (Nexus) to achieve practical energy autonomy.</text>
+
+</svg>

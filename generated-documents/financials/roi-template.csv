@@ -1,0 +1,21 @@
+# ROI template for SCEV pilots
+# Fields: label,value,notes
+Unit incremental capex,8000,Per vehicle incremental hardware/software cost
+Units / fleet size,10,Pilot size
+Average daily miles,120,Used to model kWh/mile * miles/day
+kWh per mile (baseline),0.6,Vehicle efficiency baseline
+On-vehicle net generation (%),15,Percent reduction in grid energy from harvests/recovery
+Electricity price ($/kWh),0.18,Local tariff
+Annual operating days modeled,365,
+
+# Calculated (example formulas for spreadsheet programs):
+# Baseline annual kWh = Average daily miles * kWh per mile (baseline) * Annual operating days modeled
+# Annual kWh after = Baseline annual kWh * (1 - On-vehicle net generation (%) / 100)
+# Annual energy cost savings = (Baseline annual kWh - Annual kWh after) * Electricity price ($/kWh)
+# Payback years = Unit incremental capex / Annual energy cost savings
+
+# Example row (spreadsheet-ready formulas; adjust column letters if you paste into Excel/Sheets):
+# BaselineAnnualKWh,=B3*B4*B6,
+# AnnualKWhAfter,=B9*(1-B5/100),
+# AnnualEnergySavings,=(B9-B10)*B7,
+# PaybackYears,=B1/B11
