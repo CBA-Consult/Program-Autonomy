@@ -1,6 +1,7 @@
 node_modules/
-<<<<<<< HEAD
+
+# Local environment files (do not publish)
 .env
-=======
-.env
->>>>>>> 109d5373259da811e6107e5196846033ec465fe6
+.env copy
+
+# Keep templates in repo (e.g., .env.development.template)
