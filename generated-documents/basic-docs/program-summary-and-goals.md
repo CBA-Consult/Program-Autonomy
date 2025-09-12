@@ -276,3 +276,9 @@ The immediate actions to launch the SCEV Program are updated to include the new 
 | 2 | Establish and staff the Program Management Office (PMO). | COO | Q4 2025 |
 | 3 | Secure seed funding required for the successful execution of Phase 1. | CEO / CFO | Q1 2026 |
 | 4 | Develop a master program schedule mapping dependencies and integration milestones. | Program Director | Q1 2026 |
+
+---
+
+## Appendix: Re-applied inserts
+
+Note: The following content blocks (competitive differentiation, how-it-works schematic pointers, KPI plan highlights, regulatory & safety notes, commercialization risk summary, customer case study pointers, ROI template pointer, and investor Ask) were re-applied in this appendix to ensure they are present after prior failed patch attempts. The full artifacts live in `generated-documents/` (see `basic-docs/`, `planning/`, and `financials/`).

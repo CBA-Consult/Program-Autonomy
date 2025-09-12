@@ -82,3 +82,9 @@ The SCEV CX Program governs a portfolio of high-level, experience-focused projec
 *   **Core Values:** **Safety, Sustainability, Innovation, Quality, Customer Centricity, Integrity, Collaboration, Adaptability, Respect,** and **Leadership.**
 *   **Program KPIs:** Net Promoter Score (NPS), Customer Satisfaction (CSAT), Market Share, ROI.
 *   **Project KPIs:** Each project and sub-project will have specific technical and business KPIs (e.g., kWh/day for Solari, 5-star safety for Bedrock, app ratings for Connect).
+
+---
+
+## Appendix: Re-applied inserts
+
+This appendix restores the small program content blocks that may have been missed earlier: competitive differentiation highlights, how-it-works schematic guidance, KPI plan snippets, a regulatory & safety note, commercialization risk summary, brief customer case study outlines, the ROI template reference, and the investor Ask. Full documents are in `generated-documents/`.

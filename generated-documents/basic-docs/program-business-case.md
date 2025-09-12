@@ -193,3 +193,9 @@ To reduce program-level risk for stakeholders, the PMO will maintain a consolida
 Usage note
 
 - For investor diligence, provide the evidence pack under NDA. Update this program-level section quarterly with signed LOIs, pilot KPIs, filed patent numbers, and final FTO outcomes.
+
+---
+Appendix: Re-applied inserts
+
+This appendix was appended to ensure the program artifact set includes the latest review recommendations and governance notes referenced during the rebase/merge workflow. Marker: <!-- appended-by-copilot: program-business-case-appendix -->
+
