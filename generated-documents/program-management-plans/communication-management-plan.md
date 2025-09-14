@@ -11,9 +11,9 @@
 
 **Project:** Self-Charging Electric Vehicle (SCEV) - Business Strategic Plan
 
-**Date:** October 26, 2024
+**Date:** September 13, 2025
 
-**Prepared by:** [Your Name/Company]
+**Prepared by:** Menno Drescher / SCEV
 
 
 **1. Introduction**

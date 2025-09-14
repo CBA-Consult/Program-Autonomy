@@ -118,6 +118,8 @@ Notes
 | **Customer** | Net Promoter Score (NPS) | Achieve an NPS of 72 or higher. |
 | **Performance** | Energy Recovery Efficiency | Achieve >96% regenerative braking efficiency and 82%+ average energy recovery. |
 | **Sustainability**| Carbon Footprint | Reduce carbon footprint by 27% compared to comparable grid-charged EVs. |
+| **Project**| Innovation    | Rotational/Maglev Energy Capture ("Dynamo") — portfolio-level rotational capture that may include maglev contributions (see footnote) | ≥18% of total energy from rotational/maglev sources |
+| **Project**| Technology    | In-Wheel Induction Output ("Maglev") — in-wheel induction capture only; reported separately from Dynamo | ≥12% of total energy from maglev induction |
 | **Operations** | Time-to-Market | Launch commercially within 7 years from project start. |
 
 
@@ -147,6 +149,16 @@ These focused commercialization mitigations should be monitored in the program r
 ## 10. Technology Readiness Level (TRL)
 
 The In Wheel Frictionless Maglev Technology is currently at TRL 3 (experimental proof of concept). Initial lab tests have validated the core principles of magnetic levitation and energy harvesting. The next steps include building a functional prototype (TRL 4-5), followed by pilot testing in real-world conditions (TRL 6-7). Advancement to higher TRLs will require additional R&D, iterative prototyping, and validation.
+
+### Nexus Phase Milestones (summary)
+
+The Nexus (V2H/V2G) project will follow a phase-based milestone plan to de-risk regulatory and integration complexity:
+
+| Phase | TRL Target | Key Deliverables & Milestones |
+|---|---:|---|
+| Phase 1 — Prototype & Integration (Year 1) | TRL 2 → TRL 3 | Bidirectional charger prototype, HEMS simulation, ICDs, lab interoperability tests. Target: Q4 2025 |
+| Phase 2 — Closed Pilots & Certification Prep (Year 2) | TRL 3 → TRL 4–5 | 3–5 closed beta homes, 1 depot pilot, utility pre-cert engagement, telemetry validation. Target: Q3 2026 |
+| Phase 3 — Pilot Scale & Certification (Year 3) | TRL 5 → TRL 6 | Certification submissions, expanded pilot (50–200 homes/fleets), finalized HEMS integrations. Target: Q4 2027 |
 
 ## Customer Case Studies — Before / After (one-page examples)
 
@@ -306,6 +318,10 @@ Primary target segments include:
 
 The initial go-to-market strategy will focus on premium EV manufacturers, leveraging their early adoption potential and brand influence. Subsequent phases will expand to fleet operators and broader automotive markets.
 
+### Go-to-Market & Pilot Criteria
+
+We recommend a fleet-first GTM with targeted geographic pilots. Pilot selection criteria: high solar insolation or attractive EV incentives; dense duty-cycle fleets (delivery, logistics) for rapid telemetry and payback visibility; and jurisdictions with pilot-friendly V2G/V2H frameworks. Initial channel approach: direct partnerships with fleet operators and OEM retrofit agreements, followed by scaled OEM integration or dealer channels once product-market fit is validated.
+
 ## 12. Competitive Analysis
 
 Key competitors in the EV market include Tesla, Rivian, Lucid Motors, and traditional automakers like BMW and Mercedes-Benz. Most competitors are investing in battery technology and incremental improvements in energy efficiency. Few are pursuing integrated self-charging or maglev-based solutions, presenting a unique window of opportunity for SCEV. Continuous monitoring of competitor R&D and patent filings will inform strategic positioning and product differentiation.
@@ -339,3 +355,13 @@ The project will pursue a robust intellectual property strategy, including:
 - Establishing partnerships with technology providers to access complementary IP and accelerate innovation.
 
 The IP strategy will be reviewed quarterly to ensure ongoing protection and competitive advantage.
+
+## Competitive Advantage & IP Roadmap
+
+To strengthen investor and board confidence, create a short, PMO-maintained IP roadmap that ties priority filings to project milestones. Suggested immediate actions:
+
+- Q1 2026: Commission FTO (Freedom-to-Operate) assessments for Synapse control algorithms, Bedrock mechanical interfaces, and Solari PV integration methods.
+- Q2 2026: File prioritized provisional patents for innovations identified by FTO (allocate an initial filing budget of ~$200k for provisional filings and legal review).
+- Q3 2026: Maintain an IP register in the PMO with owner, filing status, and commercialization risk (red/amber/green). PMO to own the IP register and budget oversight.
+
+This roadmap complements Section 14 and places IP actions directly next to the recommendation and governance material for faster board consumption.

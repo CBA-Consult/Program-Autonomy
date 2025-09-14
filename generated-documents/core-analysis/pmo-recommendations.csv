@@ -1,0 +1,7 @@
+id,title,owner,priority,estimated_effort_pw,status,notes
+PMO-001,Create Requirements-to-Epics RTM,PMO,High,0.5,proposed,"Generate REQ-ID mapping, validate with stakeholders, export to backlog"
+PMO-002,Add RACI to Project Charter,Project Manager,High,0.25,proposed,"Define decision authorities for key deliverables and change approvals"
+PMO-003,Acceptance Checklist Template,Quality Lead,High,0.25,proposed,"Standardized acceptance/sign-off template for validate/close processes"
+PMO-004,Define KPI Set & Dashboard,Analytics Lead,High,1,proposed,"Operational and data-quality KPIs for monitoring and executive reporting"
+PMO-005,PMO Intake & Triage Template,PMO,Medium,0.5,proposed,"Template for non-core drift intake and alignment with roadmap"
+PMO-006,Data Glossary & Stewards,Data Lead,Medium,1,proposed,"Create data glossary for critical datasets and assign stewards"

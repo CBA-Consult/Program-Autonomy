@@ -64,6 +64,16 @@ This portfolio encompasses initiatives focused on developing cutting-edge, envir
         *   Durability and weather resistance of integrated solar panels.
     *   **Status:** (Assumed to be in R&D/Technical Analysis phase).
 
+### Nexus Phase Milestones (summary)
+
+To clarify Nexus progression and TRL expectations, the program will use a phase-based approach:
+
+| Phase | TRL Target | Key Deliverables & Milestones |
+|---|---:|---|
+| Phase 1 — Prototype & Integration (Year 1) | TRL 2 → TRL 3 | Hardware prototype (bidirectional charger), HEMS integration simulation, ICDs drafted, lab interoperability tests. Target: Q4 2025 |
+| Phase 2 — Closed Pilots & Certification Prep (Year 2) | TRL 3 → TRL 4–5 | 3–5 closed beta homes + 1 depot pilot, utility pre-cert dialogs initiated, field telemetry validated. Target: Q3 2026 |
+| Phase 3 — Pilot Scale & Certification (Year 3) | TRL 5 → TRL 6 | Submit certification packages in pilot jurisdictions, expanded pilot footprint (50–200 homes/fleets), finalized HEMS integrations. Target: Q4 2027 |
+
 ### Paramount Safety Regulations
 
 For the successful deployment of SCEVs, adherence to stringent safety regulations is paramount. These include:
@@ -188,8 +198,8 @@ Success will be measured at both the program and project levels to ensure strate
 | **Program**| Financial     | Return on Investment (ROI)                            | Positive ROI within 8 years |
 | **Project**| Performance   | Energy Recovery Efficiency (`Kinetix`)                | >96% regenerative braking efficiency |
 | **Project**| Sustainability| Carbon Footprint Reduction (`Solari`)                 | ≥27% reduction vs. grid-charged EVs |
-| **Project**| Innovation    | Rotational/Maglev Energy Capture (`Dynamo`)           | ≥18% of total energy from rotational/maglev sources |
-| **Project**| Technology    | In-Wheel Induction Output (`Maglev`)                  | ≥12% of total energy from maglev induction |
+| **Project**| Innovation    | Rotational/Maglev Energy Capture (`Dynamo`)           | ≥18% of total energy from rotational/maglev sources (Dynamo = rotational energy-capture subsystem; may include flywheels, axial/rotary harvesters; may overlap with Maglev figures) |
+| **Project**| Technology    | In-Wheel Induction Output (`Maglev`)                  | ≥12% of total energy from maglev induction (Maglev = in-wheel electromagnetic induction capture; reported separately to highlight in-wheel tech contribution) |
 | **Project**| Intelligence  | AI Power Management Optimization (`Synapse`)          | ≥15% improvement in energy allocation efficiency |
 | **Project**| Platform      | Scalable Chassis Integration (`Bedrock`)              | 100% compatibility with all energy systems |
 | **Project**| Experience    | User Interface Engagement (`Interface`)               | ≥85% user satisfaction with energy management UI |
@@ -219,6 +229,12 @@ This Program Business Case for the SCEV Customer Experience (CX) Initiative is e
 2. Clarify Dynamo vs. Maglev Metrics
 - Define whether "Rotational/Maglev Energy Capture (Dynamo) ≥18%" and "In-Wheel Induction Output (Maglev) ≥12%" are cumulative or overlapping. We recommend explicitly stating if the 18% includes the 12% or if they are additive.
 - If "Dynamo" is a branded subsystem or internal shorthand, add a parenthetical definition (e.g., "Dynamo — rotational energy capture subsystem including flywheels and rotary harvesters").
+
+**Clarification (Dynamo vs Maglev KPI):**
+
+- The portfolio KPI `Dynamo (Rotational/Maglev Energy Capture) ≥18%` is a program-level target that describes total contribution from rotational energy-capture subsystems. Dynamo is an umbrella term that may include multiple capture modalities (flywheels, axial/rotary harvesters, and in-wheel Maglev induction). The `Maglev ≥12%` KPI specifically highlights the expected in-wheel electromagnetic induction contribution and is reported separately to show the in-wheel tech share. These figures are not strictly additive: the 18% Dynamo target may include the 12% Maglev contribution depending on how the pilot measures and aggregates subsystems.
+
+**GTM & IP note:** Initial pilots should prioritize solar-rich regions with favorable EV incentives and strong partner networks (logistics fleets, mobility operators). The PMO will coordinate early FTO analysis and prioritized provisional filings for Dynamo/Maglev innovations; consider selective licensing of non-core subsystems to accelerate market adoption while preserving core system IP for product differentiation.
 
 3. Add a High-Level Go-to-Market Note
 - Briefly state the preferred initial GTM approach (e.g., targeted pilot markets, channel strategy such as DTC vs. dealer partnerships, and criteria for selecting geographic pilots—solar-rich regions with EV incentives are good candidates).

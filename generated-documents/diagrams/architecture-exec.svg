@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+  <rect width="100%" height="100%" fill="#f6f7fb"/>
+  <g>
+    <rect x="40" y="60" width="920" height="120" rx="8" fill="#ffffff" stroke="#cfd8e3"/>
+    <text x="60" y="110" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#102a43">Executive program map (placeholder)</text>
+    <text x="60" y="140" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#324a6b">Sun → Solari (PV) → Guardian (BMS) → Synapse (IPMS) → Home/Grid</text>
+  </g>
+  <g>
+    <rect x="80" y="210" width="240" height="120" rx="6" fill="#eaf2ff" stroke="#bcd0ff"/>
+    <text x="100" y="255" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#123456">Project Solari</text>
+    <rect x="380" y="210" width="240" height="120" rx="6" fill="#fff4e6" stroke="#ffd9a8"/>
+    <text x="400" y="255" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7a4300">Project Kinetix</text>
+    <rect x="680" y="210" width="240" height="120" rx="6" fill="#e6fff2" stroke="#a8ffd3"/>
+    <text x="700" y="255" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#0b6b3b">Project Synapse</text>
+  </g>
+  <g>
+    <text x="60" y="460" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#6b7280">Placeholder SVG: replace with designed exec diagram (architecture-exec.svg)</text>
+  </g>
+</svg>

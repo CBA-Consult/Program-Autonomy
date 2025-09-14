@@ -19,17 +19,17 @@
 This document presents comprehensive research and development of a powerful electromagnetic induction energy generation system that harnesses rotational forces from vehicle wheels to produce continuous, frictionless energy. The system extends beyond traditional regenerative braking to provide constant energy production during all driving conditions, significantly enhancing the self-charging capabilities of electric vehicles and trains.
 
 ### Key Innovation Areas
-- **Continuous Energy Harvesting:** 24/7 power generation from wheel rotation
-- **Frictionless Operation:** Zero mechanical contact energy extraction
+- **Regenerative Energy Harvesting:** High-efficiency energy capture primarily during deceleration and energy-capture events (reframed from “continuous energy harvesting”)
+- **Frictionless Operation:** Zero mechanical contact energy extraction (note: non-contact does not imply drag-free)
 - **Multi-Modal Generation:** Integration of multiple electromagnetic induction methods
 - **Adaptive Control:** Intelligent power management based on driving conditions
 - **Train Integration:** Specialized systems for railway applications
 
 ### Performance Targets
-- **Continuous Power Output:** 5-15 kW per wheel during normal operation
-- **Peak Power Generation:** 50-150 kW per wheel during high-speed operation
-- **Energy Conversion Efficiency:** 92-96% electromagnetic conversion efficiency
-- **System Parasitic Loss:** <1.5% impact on propulsion efficiency
+- **Regenerative Power Output (deceleration capture):** 5-15 kW per wheel (typical low/medium events)
+- **Peak Regenerative Power (braking events):** 50-150 kW per wheel during high-energy recovery
+- **Energy Conversion Efficiency:** 92-96% electromagnetic conversion efficiency (theoretical generator-side)
+- **Electromagnetic Drag / Regenerative Force (nominal):** see energy-balance-sensitivity.csv for parametric examples
 - **Operational Range:** 0-300 km/h for vehicles, 0-400 km/h for trains
 
 ## 2. Electromagnetic Induction Principles for Continuous Energy Generation
@@ -63,33 +63,32 @@ A = Effective conductor area (m²)
 - **Linear Generators:** Axial flux generation from wheel rotation
 - **Radial Flux Generators:** Circumferential energy harvesting
 
-### 2.3 Frictionless Energy Production Methods
-
-**Method 1: Magnetic Levitation Induction**
+### 2.3 Regenerative Energy Production Methods (reframed)
+**Method 1: Magnetic Levitation Induction (Low/Medium capture)**
 ```
-Technology: Maglev-based energy harvesting
-Principle: Magnetic field interaction without physical contact
-Efficiency: 94-96%
-Power Output: 8-12 kW continuous per wheel
+Technology: Maglev-based energy capture (non-contact)
+Principle: Magnetic field interaction used for high-efficiency regeneration during deceleration
+Efficiency: 94-96% (generator-side theoretical)
+Typical Capture: 5-12 kW per wheel during braking events
 Applications: High-speed trains, premium electric vehicles
 ```
 
-**Method 2: Electromagnetic Resonance Coupling**
+**Method 2: Electromagnetic Resonance Coupling (auxiliary capture)**
 ```
-Technology: Wireless power transfer principles
-Principle: Resonant frequency energy coupling
-Efficiency: 90-93%
-Power Output: 5-8 kW continuous per wheel
+Technology: Wireless coupling principles for localized energy transfer during capture events
+Principle: Resonant frequency coupling for conditioning and transfer of recovered energy
+Efficiency: 90-93% (component-level)
+Typical Capture: 2-8 kW per wheel for targeted events
 Applications: Urban vehicles, delivery trucks
 ```
 
-**Method 3: Superconducting Magnetic Energy Storage (SMES) Integration**
+**Method 3: SMES Integration (burst buffering)**
 ```
-Technology: Superconducting coil energy storage
-Principle: Lossless magnetic energy storage and release
-Efficiency: 96-98%
-Power Output: 10-20 kW burst capability
-Applications: High-performance vehicles, trains
+Technology: Superconducting Magnetic Energy Storage for temporary buffering of recovered energy
+Principle: Short-term high-power buffering to smooth capture and re-delivery to bus
+Efficiency: 96-98% (storage component theoretical)
+Burst Capability: 10-20 kW-equivalent buffering per wheel aggregation
+Applications: High-performance energy recovery, trains
 ```
 
 ## 3. Continuous Energy Generation System Architecture
@@ -135,25 +134,21 @@ interface PowerGenerationController {
 }
 ```
 
-### 3.3 Multi-Modal Energy Harvesting
+### 3.3 Regenerative Braking Modes (replaces "Multi-Modal Energy Harvesting")
+**Mode 1: Low‑Intensity Regeneration (Eco Mode)**
+- Capture Range: ~2–5 kW per wheel (small deceleration events)
+- Purpose: Maintain smooth driver feel and recover small amounts of kinetic energy
+- Control: Minimal torque transients, high blend priority with friction brakes
 
-**Mode 1: Continuous Generation (Normal Driving)**
-- **Power Range:** 5-15 kW per wheel
-- **Efficiency:** 92-94%
-- **Load Impact:** <1% on propulsion
-- **Operation:** Constant low-level energy harvesting
+**Mode 2: Standard Regeneration (Balanced Mode)**
+- Capture Range: ~5–15 kW per wheel (typical deceleration)
+- Purpose: Balance energy recovery and drivability
+- Control: Dynamic blending with friction brakes; higher capture while maintaining stability
 
-**Mode 2: Enhanced Generation (Highway Driving)**
-- **Power Range:** 15-30 kW per wheel
-- **Efficiency:** 94-96%
-- **Load Impact:** 1-2% on propulsion
-- **Operation:** Optimized for high-speed efficiency
-
-**Mode 3: Regenerative Braking Integration**
-- **Power Range:** 50-150 kW per wheel
-- **Efficiency:** 95-97%
-- **Load Impact:** Beneficial (replaces friction braking)
-- **Operation:** Maximum energy recovery during deceleration
+**Mode 3: High‑Intensity Regeneration (Performance Mode)**
+- Capture Range: ~50–150 kW per wheel (aggressive braking / emergency/high-energy recovery)
+- Purpose: Maximise energy recovery during heavy deceleration events
+- Control: Coarse/fine blending, thermal management and safety interlocks active
 
 ## 4. Train-Specific Energy Generation Systems
 
@@ -234,28 +229,35 @@ Rule Set Extension for Continuous Generation:
 - IF power_demand = high THEN generation = priority_boost
 ```
 
+### 5.3 Blending with Friction Brakes (new)
+- Purpose: Ensure safe, seamless transition and coordination between regenerative braking and mechanical friction brakes.
+- Key points:
+  - Regenerative torque must be blended with friction braking to maintain pedal feel, ABS performance and safety requirements.
+  - Control law should prioritise driver intent and vehicle stability; regenerative torque is applied up to set limits, then friction brakes proportionally engage.
+  - Thermal & fade management: friction brake usage profile must consider regenerated energy limits and brake cooling.
+  - Acceptance tests: pedal feel validation, ABS/regeneration interaction, emergency-stop energy capture and fallback to friction braking.
+- Owner: Brake Systems Lead / Control Systems Engineer. ETA: include in SPIKE test plans.
+
 ## 6. Performance Analysis and Optimization
 
-### 6.1 Energy Generation Efficiency
-
-**Continuous Generation Performance:**
+### 6.1 Energy Generation Efficiency (table header updated)
+**Regenerative Performance (illustrative):**
 ```
-Speed Range (km/h) | Power Output (kW) | Efficiency (%) | Parasitic Loss (%)
-0-30               | 2-5               | 88-90          | 0.5-1.0
-30-60              | 5-10              | 90-92          | 1.0-1.5
-60-100             | 10-20             | 92-94          | 1.5-2.0
-100-150            | 20-35             | 94-96          | 1.5-2.5
-150-200            | 35-50             | 95-97          | 2.0-3.0
+Speed Range (km/h) | Power Capture (kW) | Generator Efficiency (%) | Electromagnetic Drag / Regenerative Force (%)
+0-30               | 2-5                | 88-90                   | 0.5-1.0
+30-60              | 5-10               | 90-92                   | 1.0-1.5
+60-100             | 10-20              | 92-94                   | 1.5-2.0
+100-150            | 20-35              | 94-96                   | 1.5-2.5
+150-200            | 35-50              | 95-97                   | 2.0-3.0
 ```
 
-### 6.2 System Integration Benefits
-
+### 6.2 System Integration Benefits (clarified)
 **Overall Vehicle Energy Balance:**
-- **Energy Generation:** 20-60 kW continuous (4-wheel system)
+- **Energy Capture (regenerative events):** see regenerative power ranges above and energy-balance-sensitivity.csv for parametric examples.
 - **Propulsion Consumption:** 15-80 kW (speed dependent)
-- **Net Energy Gain:** Positive at speeds >80 km/h
-- **Range Extension:** 40-60% increase in effective range
-- **Grid Independence:** Potential for energy export to grid
+- **Net Energy Gain:** none expected during steady driving; energy capture benefits accrue primarily during deceleration and braking events. All net-performance claims are pending experimental validation.
+- **Range Impact:** dependent on driving cycle and captured braking energy — pending validation.
+- **Grid Export / Vehicle-to-grid:** TBD pending validated capture & storage performance.
 
 ## 7. Implementation Roadmap
 
@@ -316,54 +318,40 @@ Speed Range (km/h) | Power Output (kW) | Efficiency (%) | Parasitic Loss (%)
 - **Total System Cost:** $14,000-22,000
 
 **Economic Benefits:**
-- **Fuel/Energy Savings:** $2,000-4,000 annually
-- **Range Extension Value:** $5,000-8,000 equivalent
-- **Grid Export Revenue:** $500-1,500 annually
-- **Payback Period:** 3-5 years
+- **Fuel/Energy Savings:** pending validation — scenario placeholders (conservative / median / optimistic)
+- **Range Extension Value:** pending validation — scenario placeholders
+- **Grid Export Revenue:** pending validation — scenario placeholders
+- **Payback Period:** pending validation — scenario-based placeholders only
 
-### 9.2 Train System Economics
-**Railway System Cost (per locomotive):**
-- **Generation System:** $50,000-80,000
-- **Integration Costs:** $20,000-30,000
-- **Total Investment:** $70,000-110,000
+- Action: remove numeric payback claims from public materials until SPIKE data and first‑principles energy balance are complete.
 
-**Railway Benefits:**
-- **Energy Cost Reduction:** $15,000-25,000 annually
-- **Grid Revenue:** $5,000-10,000 annually
-- **Maintenance Savings:** $3,000-5,000 annually
-- **Payback Period:** 2-4 years
-
-## 10. Future Development Opportunities
-
-### 10.1 Advanced Technologies
-- **Superconducting Generators:** Ultra-high efficiency systems
-- **Quantum Magnetic Effects:** Next-generation energy harvesting
-- **AI-Optimized Control:** Machine learning power management
-- **Wireless Power Distribution:** Contactless energy transfer
-
-### 10.2 Market Expansion
-- **Commercial Vehicles:** Trucks, buses, delivery vehicles
-- **Marine Applications:** Ship propulsion systems
-- **Industrial Equipment:** Heavy machinery energy recovery
-- **Renewable Integration:** Grid-scale energy storage systems
-
-## 11. Conclusion
-
-The electromagnetic induction energy generation system represents a revolutionary advancement in electric vehicle and train technology. By harnessing the continuous rotational forces of wheels through frictionless electromagnetic induction, this system provides:
-
-- **Continuous Energy Production:** 24/7 power generation capability
-- **High Efficiency:** 92-97% energy conversion efficiency
-- **Minimal Parasitic Loss:** <2% impact on vehicle propulsion
-- **Scalable Design:** Applicable to vehicles and trains
-- **Economic Viability:** 3-5 year payback period
-
-The integration with existing fuzzy control systems ensures optimal performance across all operating conditions, while the frictionless design guarantees long-term reliability and minimal maintenance requirements.
-
-This technology positions electric vehicles and trains for true energy independence, potentially achieving net-positive energy generation during normal operation and significantly extending operational range while reducing dependence on external charging infrastructure.
+## 11. Conclusion (REVISED)
+- The electromagnetic generator design and architecture represent a strong engineering basis for high-performance energy capture (notably for regenerative braking). However, claims of continuous net-positive energy generation during steady driving contradict first‑principles energy balance and are subject to experimental validation. Proceed with SPIKE tests and the ENERGY-001 analysis before reintroducing validated performance or payback figures.
 
 ---
+
+## Scope clarification — SCEV (core focus)
+This document focuses on electromagnetic induction approaches that are directly applicable to SCEV (Self-Charging Electric Vehicles) and closely related vehicular subsystems. Where rotational-force harvesting concepts (railway axle energy capture, household washing machines and tumble dryers, etc.) are encountered during research or ideation, they are noted as "drift" from the core SCEV scope and will be tracked separately to avoid scope creep.
+
+> Drift detected: For non-vehicular rotational energy harvesting (railway systems, domestic appliances), see the separate file `drift-detected-electromagnetic-rotational-forces.md` in the same folder.
+
+### Why this clarification
+- Keeps R&D and product development efforts aligned to the SCEV mission.
+- Prevents uncontrolled expansion of pilot activities into domains with different safety, certification, and commercial constraints.
 
 **Document Status:** Active Development  
 **Next Review Date:** April 27, 2025  
 **Approval Required:** Technical Review Board  
 **Implementation Priority:** High
+
+### Validation note — theoretical vs practical efficiency
+- Clarification: quoted efficiency figures are theoretical generator-side targets. Practical, end-to-end system efficiency (electromagnetic generation + power conditioning + thermal losses + mechanical/structural parasitics) is expected to be significantly lower until experimentally validated.
+- Suggested conservative guidance for documentation:
+  - Electromagnetic generator theoretical efficiency (optimised lab conditions): up to ~92–96% (document as theoretical).
+  - Realistic end‑to‑end system efficiency (field, hub‑integrated, thermal management, power electronics): likely in the range 50–85% until validated by bench/vehicle testing.
+  - Power electronics (AC→DC / DC conditioning) can approach ~95–98% efficiency as a component, but do not imply the entire system achieves this number.
+- Action: mark these efficiency claims as "subject to experimental validation" and link to the SPIKE tests (SPIKE‑001 .. SPIKE‑003) for confirmation. Remove payback / net‑positive claims until spikes and first‑principles energy balance complete.
+
+## Validation disclaimer (NEW)
+- Claims of continuous net‑positive generation are unvalidated; see SPIKE tests (SPIKE‑001, SPIKE‑002, SPIKE‑003) and the "First-principles energy-balance" task (ENERGY-001).  
+- Reframing: sections labelled "Continuous Generation" or similar describe energy-capture modes that should be interpreted primarily as regenerative‑braking / energy‑capture opportunities. Any claim that the system provides net‑positive propulsion energy during steady driving is speculative and must be removed from public-facing material until validated by bench and simulation results.

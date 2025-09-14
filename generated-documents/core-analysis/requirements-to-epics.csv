@@ -1,0 +1,17 @@
+requirement_id,summary,epic_id,priority,owner,eta,acceptance_test_link,scenario
+REQ-001,Real-time fleet status dashboard,EPIC-001,High,Product Owner,2w,generated-documents/core-analysis/acceptance-tests.md#REQ-001,accelerate
+REQ-002,Scheduling for off-peak charging,EPIC-002,High,Product Owner,2w,generated-documents/core-analysis/acceptance-tests.md#REQ-002,accelerate
+REQ-003,Mobile app with offline navigation,EPIC-003,High,Product Owner,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-003,accelerate
+REQ-004, (placeholder),EPIC-004,Medium,Product Owner,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-004,gradual
+REQ-005,KPI and sustainability dashboard,EPIC-004,High,Data Lead,2w,generated-documents/core-analysis/acceptance-tests.md#REQ-005,accelerate
+REQ-006,Export and API access to vehicle/energy data,EPIC-005,High,Backend Lead,2w,generated-documents/core-analysis/acceptance-tests.md#REQ-006,accelerate
+REQ-007, (placeholder),EPIC-006,Medium,Engineering Lead,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-007,gradual
+REQ-008,Automated software updates (OTA),EPIC-006,High,Security Lead,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-008,accelerate
+REQ-009,Predictive maintenance alerts,EPIC-007,High,Data Lead,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-009,accelerate
+REQ-010, (placeholder),EPIC-009,Medium,Product Owner,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-010,gradual
+REQ-011, (placeholder),EPIC-009,Medium,Engineering Lead,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-011,gradual
+REQ-012,Compliance-ready vehicles and documentation,EPIC-008,High,Compliance Lead,3w,generated-documents/core-analysis/acceptance-tests.md#REQ-012,gradual
+POLICY-001,Policy-watch & stakeholder engagement,EPIC-010,High,Program Manager,1w,generated-documents/core-analysis/acceptance-tests.md#POLICY-001,accelerate
+SPIKE-001,Validate continuous generation performance,EPIC-011,Medium,Lead Systems Engineer,2w,generated-documents/core-analysis/acceptance-tests.md#SPIKE-001,accelerate
+SPIKE-002,Quantify parasitic loss & propulsion impact,EPIC-011,Medium,Lead Systems Engineer,2w,generated-documents/core-analysis/acceptance-tests.md#SPIKE-002,accelerate
+SPIKE-003,Hub-integrated unit thermal & durability assessment,EPIC-011,Medium,Lead Systems Engineer,2w,generated-documents/core-analysis/acceptance-tests.md#SPIKE-003,accelerate

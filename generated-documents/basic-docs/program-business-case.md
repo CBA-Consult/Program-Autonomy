@@ -94,8 +94,8 @@ Success will be measured at both the program and project levels to ensure strate
 | **Program**| Financial     | Return on Investment (ROI)                            | Positive ROI within 8 years |
 | **Project**| Performance   | Energy Recovery Efficiency (`Kinetix`)                | >96% regenerative braking efficiency |
 | **Project**| Sustainability| Carbon Footprint Reduction (`Solari`)                 | ≥27% reduction vs. grid-charged EVs |
-| **Project**| Innovation    | Rotational/Maglev Energy Capture (`Dynamo`)           | ≥18% of total energy from rotational/maglev sources |
-| **Project**| Technology    | In-Wheel Induction Output (`Maglev`)                  | ≥12% of total energy from maglev induction |
+| **Project**| Innovation    | Rotational/Maglev Energy Capture (`Dynamo`)           | ≥18% of total energy from rotational/maglev sources (Dynamo = rotational energy-capture subsystem; may include flywheels, axial/rotary harvesters; may overlap with Maglev figures) |
+| **Project**| Technology    | In-Wheel Induction Output (`Maglev`)                  | ≥12% of total energy from maglev induction (Maglev = in-wheel electromagnetic induction capture; reported separately to highlight in-wheel tech contribution) |
 | **Project**| Intelligence  | AI Power Management Optimization (`Synapse`)          | ≥15% improvement in energy allocation efficiency |
 | **Project**| Platform      | Scalable Chassis Integration (`Bedrock`)              | 100% compatibility with all energy systems |
 | **Project**| Experience    | User Interface Engagement (`Interface`)               | ≥85% user satisfaction with energy management UI |
@@ -129,11 +129,31 @@ This Program Business Case for the SCEV Customer Experience (CX) Initiative is e
 3. Add a High-Level Go-to-Market Note
 - Briefly state the preferred initial GTM approach (e.g., targeted pilot markets, channel strategy such as DTC vs. dealer partnerships, and criteria for selecting geographic pilots—solar-rich regions with EV incentives are good candidates).
 
+### Go-to-Market & IP Note
+
+- GTM & Pilot Criteria: Initial pilots should prioritize solar-rich regions with favorable EV incentives and strong partner networks (logistics fleets, mobility operators). Pilot selection criteria: solar insolation, regulatory friendliness, telemetry partner availability, and mixed urban/peri-urban use cases to accelerate learning.
+
+Pilot selection checklist:
+
+- Solar insolation and seasonal stability (higher expected PV yield)
+- Regulatory and utility pilot friendliness (clear interconnection rules)
+- Partner telemetry capability and centralized operations (fleet/ depot access)
+- Mixed urban/peri-urban duty cycles to capture varied drive profiles and accelerate algorithmic learning
+
+- IP & Licensing: The PMO will coordinate early FTO analysis and prioritized provisional filings for differentiating inventions (notably Synapse control algorithms, Bedrock mechanical interfaces, and key Dynamo/Maglev subsystem innovations). Consider selective licensing of non-core subsystems to accelerate adoption while preserving core system IP for product differentiation.
+
 4. Insert a One-Page Program Map (visual placeholder)
 - Add or reference a one-page architecture diagram that maps Programs → Projects → Key deliverables and integration points. This accelerates comprehension for board-level reviewers.
 
+IP / FTO Action Items (PMO ownership)
+- The PMO will convert the IP recommendations into an explicit action register with owners, deliverables and budget oversight. Initial required actions (owners & targets):
+	1. FTO Completion & Report — Owner: PMO IP Lead; Target: Q4 2025. Commission a prioritized FTO review for Solari, Kinetix, Maglev, Synapse and Bedrock interfaces and deliver a formal report with blocking risks and mitigation options.
+	2. Provisional Filing Budget & Execution — Owner: Legal / PMO Finance Sponsor; Target: Q2 2026. Allocate a provisional filing budget (suggested initial allocation: $120k) and execute prioritized provisional filings for top-priority inventions (Synapse algorithms, Bedrock mechanical interfaces, Dynamo/Maglev subsystems).
+	3. PMO IP Register & Quarterly Review — Owner: PMO Program Manager; Target: Establish Q3 2026 and review quarterly. Maintain an IP register (owner, status, costs, commercialization risk) and report filing status and spend to the program steering committee each quarter.
+
 5. Include an ESG / Impact Snapshot
-- Add a short paragraph quantifying expected carbon reductions, battery lifecycle considerations (recycling/second-life), and social impact where relevant. This helps attract ESG-minded investors.
+- ESG / Impact Snapshot: The SCEV program is expected to reduce net lifecycle emissions by an estimated 12–22% per vehicle-year compared with grid-reliant EVs in similar duty cycles, driven by on-vehicle energy recovery and targeted PV harvesting in pilot markets. Fleet deployments are also projected to lower peak depot charging demand, improving local grid resilience and delivering measurable community energy benefits.
+- Battery lifecycle note: Design-for-circularity is a program priority — standardized battery modules will enable safe second-life stationary storage and strong end-of-life recycling partnerships to minimize environmental impact.
 
 ### Summary Table of Recommendations
 | Area | Suggestion | Value |

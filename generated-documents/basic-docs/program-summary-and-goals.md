@@ -10,7 +10,7 @@
 | Version | Date | Author | Summary |
 |---|---:|---|---|
 | 4.0 | 2025-08-26 | Menno Drescher | V2H Integration baseline release |
-| 4.1 | 2025-09-08 | Menno Drescher | Added strategic enhancements: customer-value per project, Project Nexus milestones, architecture model guidance, IP & regulatory notes |
+| 4.1 | 2025-09-08 | Menno Drescher | Added strategic enhancements: customer-value per project, Project Nexus milestones, architecture guidance, IP & regulatory notes |
 | 4.2 | 2025-09-08 | Menno Drescher | Embedded customer-value into project matrix; added visual storytelling guidance, IP/regulatory timeline & jurisdiction priorities; restructured KPIs and added Impact-at-Scale snapshot |
 | 4.3 | 2025-09-08 | Menno Drescher | Added executive callout, restructured KPI categories, and added Section 5.1 Impact-at-Scale with assumptions and projections |
 
@@ -54,6 +54,8 @@ We prioritize go-to-market efforts by segment to accelerate adoption and maximiz
 	- Why it matters: Important for brand storytelling and retail sales, but typically longer payback; best approached through OEM channel or targeted incentives.
 
 Recommended initial GTM order: Fleet operators -> OEM retrofit partnerships -> Shared mobility -> Homeowners (pilot / PR campaigns).
+
+Go-to-market paragraph: Begin with fleet-first pilots to prove economic value quickly, then expand via OEM retrofit partnerships and selective DTC offers for premium consumers. Prioritize partners that provide centralized telemetry and depot operations to accelerate learning. Use a mixed channel strategy (fleet-first, selective OEM integrations, and pilot DTC programs) to balance rapid adoption with brand and regulatory considerations.
 
 
 
@@ -105,15 +107,24 @@ The architecture diagrams are critical for board and investor decks. Produce two
 
 I can generate both SVGs and add them to the repo; tell me which style you prefer (minimalist vector or annotated technical with swimlanes).
 
+## Diagrams (placeholders)
+
+The repository includes two placeholder diagrams that can be replaced with final visuals when ready:
+
+- Executive diagram (one-page summary): `generated-documents/diagrams/architecture-exec.svg`
+- Technical flow (detailed): `generated-documents/diagrams/architecture-technical.svg`
+
+These are simple SVG stubs checked into the repo as starting points — replace them with the finalized assets for the investor/executive pack and the TSC technical appendix.
+
 2) Project Nexus: Phase-Based Milestones
 
 Project Nexus carries regulatory and integration complexity. Articulating milestone progression reduces perceived risk:
 
-| Phase | Nexus Milestone |
-|---|---|
-| Phase 1 | Develop V2H/V2G hardware prototype and home integration simulation; TRL assessment. |
-| Phase 2 | Run closed beta pilots with partner utilities and early adopter homes; refine HEMS integration. |
-| Phase 3 | Scale V2H/V2G rollout and certify integrations with major home energy platforms / utility partners. |
+| Phase | TRL Target | Key Deliverables & Milestones |
+|---|---:|---|
+| Phase 1 — Prototype & Integration (Year 1) | TRL 2 → TRL 3 | Hardware prototype (bidirectional charger), HEMS integration simulation, ICDs drafted, lab interoperability tests, safety baseline established. Owner: Nexus Lead. Target: Q4 2025 |
+| Phase 2 — Closed Pilots & Certification Prep (Year 2) | TRL 3 → TRL 4–5 | 3–5 closed beta homes + 1 depot pilot, utility pre-cert dialogs initiated, field telemetry validated, initial FOTA/OTA controls integrated with Synapse. Owner: Nexus Lead + Regulatory Liaison. Target: Q3 2026 |
+| Phase 3 — Pilot Scale & Certification (Year 3) | TRL 5 → TRL 6 | Submit certification packages in pilot jurisdictions, expanded pilot footprint (50–200 homes/fleets), finalized HEMS integrations, commercial readiness assessment. Owner: Program Director / Nexus Lead. Target: Q4 2027 |
 
 3) System Architecture / Integration Model (visual)
 
@@ -282,3 +293,5 @@ The immediate actions to launch the SCEV Program are updated to include the new 
 ## Appendix: Re-applied inserts
 
 Note: The following content blocks (competitive differentiation, how-it-works schematic pointers, KPI plan highlights, regulatory & safety notes, commercialization risk summary, customer case study pointers, ROI template pointer, and investor Ask) were re-applied in this appendix to ensure they are present after prior failed patch attempts. The full artifacts live in `generated-documents/` (see `basic-docs/`, `planning/`, and `financials/`).
+
+Consolidated re-applied inserts are maintained in `generated-documents/basic-docs/appendices/reapplied-inserts.md` to improve maintainability. When promoting re-applied content into canonical appendices, remove the per-file markers and update the consolidated register.

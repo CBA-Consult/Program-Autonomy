@@ -1,0 +1,8 @@
+id,category,item,owner,target_quarter,target_year,status,estimated_budget_usd,notes
+1,IP,FTO Completion & Report,PMO IP Lead,Q4,2025,planned,15000,"Commission prioritized FTO for Solari,Kinetix,Maglev,Synapse,Bedrock; deliver formal report"
+2,IP,Provisional Filing Budget & Execution,Legal / PMO Finance Sponsor,Q2,2026,planned,120000,"Allocate provisional filing budget and execute filings for Synapse, Bedrock,Dynamo/Maglev"
+3,IP,PMO IP Register & Quarterly Review,PMO Program Manager,Q3,2026,planned,5000,"Establish IP register and quarterly reporting to steering committee"
+4,Nexus,Phase 1 - Prototype & Integration,Nexus Lead,Q4,2025,planned,250000,"Bidirectional charger prototype, HEMS simulation, ICDs, lab tests"
+5,Nexus,Phase 2 - Closed Pilots & Certification Prep,Nexus Lead + Regulatory Liaison,Q3,2026,planned,800000,"3-5 closed beta homes, 1 depot pilot, utility pre-cert dialogs, telemetry validation"
+6,Nexus,Phase 3 - Pilot Scale & Certification,Program Director / Nexus Lead,Q4,2027,planned,2500000,"Submit certification packages, expand pilot to 50-200 homes/fleets, finalize HEMS integrations"
+7,PMO,Battery supply risk dashboard,PMO Program Manager,Q4,2025,planned,8000,"Dashboard and risk heatmap for battery supply chain exposure; deliverable: one-page dashboard + risk register"
