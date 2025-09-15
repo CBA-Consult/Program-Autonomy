@@ -82,3 +82,91 @@ Suggested artifacts to add to PMO toolbox
 Notes
 
 An AI‑Driven Program is organizational: it requires the same rigor, artifacts, and governance you use for hardware and software. When embedded into a program like SCEV, ML becomes a repeatable, auditable component that accelerates product value while managing safety and regulatory obligations.
+
+Generative AI Terminology and Techniques
+
+Introduction
+- Generative AI produces novel content (text, images, audio, video) by learning patterns in data. For an AI‑Driven Program, this capability should be scoped to concrete use cases, governed for safety, and instrumented for validation.
+
+Key Terms & Techniques (short glossary)
+- Artificial Intelligence (AI): Systems that perform tasks requiring human-like cognition; ML/DL are subfields.
+- Machine Learning (ML): Data-driven algorithms that learn patterns; includes supervised, unsupervised, and reinforcement learning.
+- Deep Learning (DL): Multi-layer neural networks that learn hierarchical features from large datasets.
+- Neural Networks (NN): Layered models (weights, activations) used for pattern recognition and approximation.
+- Generative Adversarial Networks (GANs): Generator/discriminator pair for producing realistic synthetic data (images, audio, sensor signals).
+- Natural Language Processing (NLP): Techniques for understanding and generating human language.
+- Transformers: Attention-based architectures enabling long-context sequence modelling.
+- Generative Pre-trained Transformers (GPT): Large transformer LMs pre-trained on broad corpora and fine-tuned for tasks.
+- Tokenization / Word2vec / BERT:
+  - Tokenization: split text into tokens for model input.
+  - Word2vec: shallow embeddings capturing word similarity.
+  - BERT: bidirectional transformer for contextual embeddings.
+
+Practical Use Cases (program‑level)
+- Documentation & Reporting: draft test reports, evidence packs, and summaries (NLP/GPT) with human review.
+- Telemetry Augmentation & Simulation: synthetic sensor data for rare-event testing (GANs / DL).
+- Anomaly Explanation & Triage: summarise logs and surface hypotheses (transformers + explainers).
+- Human‑in‑the‑Loop Assistants: accelerate engineering tasks (prompting, code snippets, templates).
+- Media & Training Material: generated imagery/animations for operator training and explainability.
+
+Ethics, Safety & Limitations
+- Bias & Representativeness: test and mitigate dataset bias; use diverse pilot sites and targeted collection.
+- Hallucination / Incorrect Outputs: label generative outputs; require verification before operational use.
+- Explainability & Accountability: keep model cards, decision logs, and human‑readable rationales for safety‑critical actions.
+- Data Privacy & IP: use permitted data, anonymize telemetry, track provenance.
+- Model Drift & Robustness: implement drift detection, scheduled retraining, and shadow evaluation.
+- Compute & Carbon Cost: prefer efficient models for edge inference; account for operational cost.
+- Safety Critical Limits: never permit unvalidated generative outputs to autonomously drive actuators.
+
+Governance & Best Practices (operational checklist)
+- Model Cards & Evidence Packs: capture training data provenance, metrics, limitations, and intended use.
+- Shadow / Canary Releases: validate generative features in non‑critical modes before active control.
+- Human‑in‑the‑Loop & Kill Switches: require human approval or independent safety controller for actuator‑impacting actions.
+- Synthetic Data Controls: track synthetic vs real data and limit synthetic use for regulatory contexts.
+- Validation Tests: prompt‑sensitivity, adversarial examples, bias audits, and factuality checks.
+- Monitoring & Alerting: per‑decision telemetry, hallucination detectors, and automated rollback thresholds.
+
+Integration Actions (recommended additions to PMO toolbox)
+- Add "Generative AI Glossary" to evidence pack templates.
+- Add "Generative Model Acceptance Tests" to phase‑gate criteria (factuality, bias, safety).
+- Create training modules on prompt design, verification, and safe deployment practices.
+
+Program Principles — mapping the 12 principles to an AI‑Driven Program
+- Stewardship: Treat data and models as long‑lived assets with custodians, lifecycle plans, and evidence packs.
+- Team: Build cross‑functional teams (ML, controls, safety, product, data eng) with clear responsibilities.
+- Stakeholders: Involve operators, safety leads, legal and users early for requirements and acceptance.
+- Value: Prioritise ML work by measurable program KPIs (energy saved, safety events reduced, uptime).
+- Systems Thinking: Model interactions between ML, control systems, hardware, and human operators.
+- Leadership: Ensure leaders support safe experimentation, allocate compute/data budgets, and enforce phase gates.
+- Tailoring: Adapt ML process and rigor to risk profile—edge inference vs research prototype require different controls.
+- Quality: Enforce data quality, test suites, and reproducible training pipelines.
+- Complexity: Acknowledge model and system complexity; mitigate via modular design, simulations, and decoupling.
+- Risk: Identify ML-specific risks (bias, hallucination, drift) and include them in program risk registers with mitigations.
+- Adaptability & Resiliency: Build retraining pipelines, rollback strategies, and redundancy for model failures.
+- Change: Maintain clear change control for model updates, retraining, and data schema changes; require evidence for rollouts.
+
+Program Values — the ethical foundation
+- Respect: Protect user privacy, acknowledge stakeholder perspectives, and design systems that preserve human dignity.
+- Responsibility: Assign clear custodians for data, models and decisions; ensure timely rotation of credentials and incident response.
+- Fairness: Evaluate and mitigate bias across datasets, models and operational outcomes; measure fairness metrics and document trade-offs.
+- Honesty: Surface model limitations, confidence bounds and provenance; avoid overstating capabilities in external communications.
+
+Conclusion (concise)
+- Generative AI provides powerful tools for productivity, simulation, and augmentation, but introduces distinct risks. Treat generative models as assistants until validated for autonomous use. Apply the same phase‑gate rigor, evidence artifacts, and safety controls described elsewhere in this document when adopting generative techniques.
+
+## Visual — Ethical Foundations & Program Principles
+
+The SVG diagram visualises the four ethical foundations at the core (Respect, Responsibility, Fairness, Honesty) with the twelve program principles arranged around the core.
+
+- SVG file location: ../assets/ai-ethics-core.svg
+
+Display options:
+
+Markdown image (works in most renderers):
+![AI Ethics Core and Program Principles](../assets/ai-ethics-core.svg)
+
+HTML object embed (better inline SVG support in some viewers):
+<object type="image/svg+xml" data="../assets/ai-ethics-core.svg" width="800" height="800">
+  Your browser does not support inline SVG. Open generated-documents/assets/ai-ethics-core.svg directly.
+</object>
+

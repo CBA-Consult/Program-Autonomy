@@ -295,3 +295,30 @@ The immediate actions to launch the SCEV Program are updated to include the new 
 Note: The following content blocks (competitive differentiation, how-it-works schematic pointers, KPI plan highlights, regulatory & safety notes, commercialization risk summary, customer case study pointers, ROI template pointer, and investor Ask) were re-applied in this appendix to ensure they are present after prior failed patch attempts. The full artifacts live in `generated-documents/` (see `basic-docs/`, `planning/`, and `financials/`).
 
 Consolidated re-applied inserts are maintained in `generated-documents/basic-docs/appendices/reapplied-inserts.md` to improve maintainability. When promoting re-applied content into canonical appendices, remove the per-file markers and update the consolidated register.
+
+---
+
+# AI‑Driven Program Overview
+
+Purpose
+
+This document explains what an "AI‑Driven Program" is and how to govern one inside a multi-project technology program such as SCEV. It is a one‑page executive reference for PMO, TSC and partners.
+
+Definition / short summary
+
+An AI‑Driven Program like SCEV is a coordinated multi-project initiative that integrates advanced AI capabilities across all phases—from R&D to operations—to optimize performance, reduce costs, and accelerate time-to-market for self-charging electric vehicles. It leverages AI for data-driven decision making, predictive analytics, and intelligent automation, ensuring the program adapts and evolves with changing technology and market dynamics.
+
+### Drivers — Why this Program is Needed
+
+- Energy cost pressure and range anxiety: rising electricity prices and user concern about range create demand for vehicles that reduce net grid consumption and extend usable range through intelligent on‑vehicle generation and management.
+- Fleet economics & operational uptime: high‑utilization fleets (delivery, shared mobility, utilities) need lower downtime and predictable energy costs; SCEV targets faster ROI in depot‑operated scenarios.
+- Resilience & customer value (V2H/V2G): households and businesses require backup power and flexible energy assets; bidirectional capability adds resilience and new value streams.
+- Regulatory & market trends: emissions targets, grid flexibility programs and incentives for distributed energy resources create favorable conditions for vehicle‑centric energy services.
+- Technology convergence: maturity of solar integration, advanced BMS, and AI energy orchestration makes a coordinated program feasible and defensible.
+- Strategic differentiation & IP: integrated hardware+software solutions create product differentiation, licensing and partnership opportunities for OEMs and Tier‑1 suppliers.
+- Sustainability & brand positioning: tangible CO₂ and energy savings align with corporate sustainability goals and strengthen market positioning for early adopters.
+- Risk management & certification complexity: coordinated program approach reduces integration risk, shortens certification paths (safety, EMC, grid interop) and centralizes regulatory engagement.
+
+Placement note: use these drivers to prioritise projects, set KPI targets, and justify pilot sequencing in the PMO roadmap.
+
+---
